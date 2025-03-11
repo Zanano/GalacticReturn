@@ -1,0 +1,9 @@
+name "Galactic Return"
+about "Allows you to return to the main galaxy from the Enclave galaxy via a new Wormhole."
+version 1.0.0
+authors
+	"Zanano Quinito"
+
+dependencies
+	"game version" 0.10.12
+	

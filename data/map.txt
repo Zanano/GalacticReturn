@@ -1,0 +1,38 @@
+wormhole "Return Wormhole"
+	mappable
+	link "Galactic Wormhole" "Zuben-A"
+	link "Zuben-A" "Galactic Wormhole"
+	
+system Zuben-A
+	pos -770 326
+	government Republic
+	attributes "rim"
+	arrival 1250
+	habitable 1250
+	link Zubeneschamali
+	object "Enclave Galaxy Wormhole"
+		sprite planet/wormhole
+		distance 4000
+		offset 450
+planet "Enclave Galaxy Wormhole"
+	wormhole "Return Wormhole"
+	
+system "Galactic Wormhole"
+	pos 4910 610
+	link Anvyu
+	object "Return Wormhole"
+		sprite planet/wormhole
+		distance 1500
+		period 0
+		offset 0
+
+
+
+planet "Return Wormhole"
+	wormhole "Return Wormhole"
+	
+system Anvyu
+	add link "Galactic Wormhole"
+	
+system Zubeneschamali
+	add link "Zuben-A"
